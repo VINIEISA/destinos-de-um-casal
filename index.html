@@ -65,13 +65,17 @@ footer{background:var(--navy);color:#cbd3d6;text-align:center;padding:28px;font-
  .gallery img{height:180px}
  .service-grid{grid-template-columns:1fr}
 }
-  .stats-period {
+.stats .stats-period {
+  grid-column: 1 / -1;
+  justify-self: stretch;
   text-align: center;
+  display: block;
   width: 100%;
+  box-sizing: border-box;
   font-size: 13px;
   letter-spacing: 1px;
   color: #b89b62;
-  margin-top: 15px;
+  margin: 15px 0 0;
   text-transform: uppercase;
 }
 </style>
