@@ -1,1 +1,172 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#172d3a">
+<title>Destinos de um Casal | Mídia Kit</title>
+<meta name="description" content="Conheça Isadora e Vinícius, criadores do Destinos de um Casal. Viagens, gastronomia e experiências.">
+<style>
+:root {
+  --navy:#172d3a;
+  --gold:#d9b779;
+  --cream:#f7f4ed;
+  --ink:#25343a;
+  --muted:#718087;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+header{background:var(--navy);color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.logo{font-family:Georgia,serif;font-size:19px;letter-spacing:2px}
+nav{display:flex;gap:22px;flex-wrap:wrap;font-size:13px}
+nav a:hover{color:var(--gold)}
+.hero{background:var(--navy);color:white;padding:75px 8% 85px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:45px}
+.eyebrow{color:var(--gold);letter-spacing:3px;text-transform:uppercase;font-size:11px}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,76px);line-height:1.05;font-weight:normal;margin:18px 0}
+.hero p{line-height:1.8;color:#d5dce0;max-width:500px}
+.hero img{width:100%;height:420px;object-fit:cover;border-radius:180px 180px 12px 12px}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);padding:15px 23px;border-radius:3px;font-weight:bold;margin-top:18px;font-size:13px}
+section{padding:75px 8%}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title span{color:#a57e3e;text-transform:uppercase;letter-spacing:3px;font-size:11px}
+h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,45px);font-weight:normal;color:var(--navy);margin:12px 0}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
+.about img{width:100%;height:400px;object-fit:cover;border-radius:5px}
+.about p{line-height:1.9;color:#627077}
+.stats{background:white;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+.stat strong{font-family:Georgia,serif;font-size:35px;color:var(--navy);display:block}
+.stat span{font-size:12px;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:4px}
+.video-card{background:white;padding:12px;border-radius:5px}
+.video-card img{width:100%;height:210px;object-fit:cover}
+.video-card p{font-size:13px;line-height:1.5}
+.services{background:var(--navy);color:white}
+.services h2{color:white}
+.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.service{border:1px solid #53636a;padding:25px;border-radius:4px}
+.service h3{font-family:Georgia,serif;color:var(--gold);font-size:22px;font-weight:normal}
+.service p{font-size:13px;line-height:1.7;color:#d0d8dc}
+.contact{text-align:center;background:#eae3d5}
+.contact p{line-height:1.8;color:#657078}
+footer{background:var(--navy);color:#cbd3d6;text-align:center;padding:28px;font-size:12px}
+@media(max-width:700px){
+ header{padding:20px 6%}
+ nav{gap:12px}
+ .hero,.about{grid-template-columns:1fr}
+ .hero{padding:50px 7%}
+ .hero img{height:320px}
+ section{padding:55px 7%}
+ .stats{grid-template-columns:1fr}
+ .gallery{grid-template-columns:repeat(2,1fr)}
+ .gallery img{height:180px}
+ .service-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">DESTINOS DE UM CASAL</div>
+  <nav>
+    <a href="#sobre">Sobre nós</a>
+    <a href="#numeros">Estatísticas</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#servicos">Parcerias</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <span class="eyebrow">Mídia Kit • Apresentação comercial</span>
+    <h1>Experiências que merecem ser compartilhadas.</h1>
+    <p>Somos Isadora e Vinícius. Um casal apaixonado por descobrir lugares, experimentar sabores e transformar momentos em histórias.</p>
+    <a class="btn" href="#contato">Vamos criar uma parceria?</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=1000" alt="Paisagem de viagem">
+</section>
+
+<section id="sobre">
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=900" alt="Viagem e experiências">
+    <div>
+      <span class="eyebrow">Nossa história</span>
+      <h2>Dois corações, muitos destinos.</h2>
+      <p>Somos Isadora e Vinícius, criadores do Destinos de um Casal.</p>
+      <p>Compartilhamos viagens, restaurantes, hospedagens e experiências para inspirar outros casais a conhecerem novos lugares.</p>
+      <p>Acreditamos que cada destino tem uma história e cada experiência pode se transformar em uma lembrança especial.</p>
+      <strong>@destinosdeumcasal04</strong>
+    </div>
+  </div>
+</section>
+
+<section class="stats" id="numeros">
+  <div class="stat"><strong>A atualizar</strong><span>Seguidores no Instagram</span></div>
+  <div class="stat"><strong>A atualizar</strong><span>Alcance mensal</span></div>
+  <div class="stat"><strong>A atualizar</strong><span>Visualizações de conteúdo</span></div>
+</section>
+
+<section id="portfolio">
+  <div class="section-title">
+    <span>Nosso trabalho</span>
+    <h2>Experiências em imagens</h2>
+    <p>Um pouco do universo que compartilhamos.</p>
+  </div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700" alt="Paisagem de viagem">
+    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700" alt="Restaurante">
+    <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=700" alt="Hospedagem">
+    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=700" alt="Destino turístico">
+    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700" alt="Gastronomia">
+    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=700" alt="Montanhas">
+  </div>
+</section>
+
+<section class="services" id="servicos">
+  <div class="section-title">
+    <span>O que fazemos</span>
+    <h2>Vamos contar sua história?</h2>
+  </div>
+  <div class="service-grid">
+    <div class="service">
+      <h3>Restaurantes e gastronomia</h3>
+      <p>Produção de conteúdo apresentando pratos, ambientes e experiências gastronômicas.</p>
+    </div>
+    <div class="service">
+      <h3>Hotéis e hospedagens</h3>
+      <p>Apresentação de acomodações, estrutura, atendimento e experiências de hospedagem.</p>
+    </div>
+    <div class="service">
+      <h3>Turismo e destinos</h3>
+      <p>Vídeos e fotografias mostrando destinos, passeios e atrações turísticas.</p>
+    </div>
+    <div class="service">
+      <h3>Criação de conteúdo</h3>
+      <p>Reels, vídeos promocionais, fotografia e materiais para redes sociais e campanhas.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="contact">
+  <span class="eyebrow">Parcerias comerciais</span>
+  <h2>Seu negócio pode ser nosso próximo destino.</h2>
+  <p>Vamos conversar sobre uma parceria e criar conteúdos que apresentem sua marca de uma maneira especial.</p>
+  <a class="btn" href="https://www.instagram.com/destinosdeumcasal04/" target="_blank">Conheça nosso Instagram</a>
+  <br>
+  <a class="btn" href="mailto:SEUEMAIL@EXEMPLO.COM">Solicitar parceria</a>
+</section>
+</main>
+
+<footer>
+  © 2026 Destinos de um Casal • Isadora e Vinícius
+  <br><br>
+  Instagram: @destinosdeumcasal04
+</footer>
+</body>
+</html>
+
