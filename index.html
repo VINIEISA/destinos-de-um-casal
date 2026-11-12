@@ -44,6 +44,33 @@ h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,45px);font-weight:normal;c
 .video-card{background:white;padding:12px;border-radius:5px}
 .video-card img{width:100%;height:210px;object-fit:cover}
 .video-card p{font-size:13px;line-height:1.5}
+  .video-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
+  justify-content: center;
+  gap: 25px;
+}
+
+.video-card {
+  width: 100%;
+  max-width: 360px;
+  margin: auto;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.video-card iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  border: 0;
+  border-radius: 4px;
+}
+
+.video-card h3 {
+  font-family: Georgia, serif;
+  color: var(--navy);
+  font-weight: normal;
+}
 .services{background:var(--navy);color:white}
 .services h2{color:white}
 .service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
@@ -196,6 +223,24 @@ footer{background:var(--navy);color:#cbd3d6;text-align:center;padding:28px;font-
     <div class="service">
       <h3>Criação de conteúdo</h3>
       <p>Reels, vídeos promocionais, fotografia e materiais para redes sociais e campanhas.</p>
+    </div>
+  </div>
+</section>
+  <section id="videos">
+  <span class="eyebrow">Nosso trabalho</span>
+  <h2>Experiências em vídeo</h2>
+  <p>Conheça alguns dos momentos e experiências que compartilhamos.</p>
+
+  <div class="video-gallery">
+    <div class="video-card">
+      <iframe
+        src="https://www.youtube.com/embed/_nN_LaJUFB0"
+        title="Experiência - Destinos de um Casal"
+        loading="lazy"
+        allowfullscreen>
+      </iframe>
+      <h3>Nossa experiência</h3>
+      <p>Um pouco das experiências que vivemos e compartilhamos.</p>
     </div>
   </div>
 </section>
