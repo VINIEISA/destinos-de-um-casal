@@ -44,17 +44,16 @@ h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,45px);font-weight:normal;c
 .video-card{background:white;padding:12px;border-radius:5px}
 .video-card img{width:100%;height:210px;object-fit:cover}
 .video-card p{font-size:13px;line-height:1.5}
-  .video-gallery {
+ .video-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 360px));
-  justify-content: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 25px;
 }
 
 .video-card {
   width: 100%;
-  max-width: 360px;
-  margin: auto;
+  max-width: none;
+  margin: 0;
   box-shadow: 0 4px 18px rgba(0,0,0,0.08);
 }
 
@@ -87,10 +86,11 @@ footer{background:var(--navy);color:#cbd3d6;text-align:center;padding:28px;font-
  .hero{padding:50px 7%}
  .hero img{height:320px}
  section{padding:55px 7%}
- .stats{grid-template-columns:1fr}
- .gallery{grid-template-columns:repeat(2,1fr)}
- .gallery img{height:180px}
- .service-grid{grid-template-columns:1fr}
+.stats{grid-template-columns:1fr}
+.gallery{grid-template-columns:repeat(2,1fr)}
+.gallery img{height:180px}
+.service-grid{grid-template-columns:1fr}
+.video-gallery{grid-template-columns:1fr}
 }
 .stats .stats-period {
   grid-column: 1 / -1;
