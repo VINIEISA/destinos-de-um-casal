@@ -164,7 +164,167 @@ footer{background:var(--navy);color:#cbd3d6;text-align:center;padding:28px;font-
   <p class="stats-period">Dados dos últimos 30 dias</p>
   
 </section>
+<style>
+  .publico {
+    padding: 64px 20px;
+    color: #f8f6f0;
+    background: #101d35;
+  }
 
+  .publico-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .publico h2 {
+    margin: 0 0 10px;
+    color: #d7b56d;
+    text-align: center;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+  }
+
+  .publico-intro {
+    margin: 0 auto 32px;
+    max-width: 650px;
+    color: #d5d9e1;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  .publico-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .publico-card {
+    padding: 24px;
+    border: 1px solid rgba(215, 181, 109, .35);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .04);
+  }
+
+  .publico-card h3 {
+    margin: 0 0 18px;
+    color: #d7b56d;
+    font-size: 1.15rem;
+  }
+
+  .publico-lista {
+    display: grid;
+    gap: 14px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .publico-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 4px 12px;
+    align-items: center;
+  }
+
+  .publico-item strong {
+    color: #fff;
+    font-size: .95rem;
+  }
+
+  .publico-item span {
+    color: #e4c77f;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .publico-barra {
+    grid-column: 1 / -1;
+    height: 6px;
+    overflow: hidden;
+    border-radius: 99px;
+    background: rgba(255, 255, 255, .12);
+  }
+
+  .publico-barra i {
+    display: block;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #b79550, #e4c77f);
+  }
+
+  @media (max-width: 680px) {
+    .publico {
+      padding: 48px 16px;
+    }
+
+    .publico-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .publico-card {
+      padding: 20px;
+    }
+  }
+</style>
+
+<section class="publico" id="perfil-publico">
+  <div class="publico-inner">
+    <h2>Perfil do nosso público</h2>
+    <p class="publico-intro">
+      Conheça a audiência do Destinos de um Casal por gênero, faixa etária e localização.
+    </p>
+
+    <div class="publico-grid">
+      <article class="publico-card">
+        <h3>Gênero</h3>
+        <ul class="publico-lista">
+          <li class="publico-item">
+            <strong>Mulheres</strong><span>69,6%</span>
+            <div class="publico-barra"><i style="width:69.6%"></i></div>
+          </li>
+          <li class="publico-item">
+            <strong>Homens</strong><span>30,4%</span>
+            <div class="publico-barra"><i style="width:30.4%"></i></div>
+          </li>
+        </ul>
+      </article>
+
+      <article class="publico-card">
+        <h3>Faixa etária</h3>
+        <ul class="publico-lista">
+          <li class="publico-item"><strong>13–17 anos</strong><span>1,1%</span><div class="publico-barra"><i style="width:1.1%"></i></div></li>
+          <li class="publico-item"><strong>18–24 anos</strong><span>16,7%</span><div class="publico-barra"><i style="width:16.7%"></i></div></li>
+          <li class="publico-item"><strong>25–34 anos</strong><span>35,2%</span><div class="publico-barra"><i style="width:35.2%"></i></div></li>
+          <li class="publico-item"><strong>35–44 anos</strong><span>26,2%</span><div class="publico-barra"><i style="width:26.2%"></i></div></li>
+          <li class="publico-item"><strong>45–54 anos</strong><span>15,0%</span><div class="publico-barra"><i style="width:15%"></i></div></li>
+          <li class="publico-item"><strong>55–64 anos</strong><span>4,8%</span><div class="publico-barra"><i style="width:4.8%"></i></div></li>
+          <li class="publico-item"><strong>65+ anos</strong><span>0,9%</span><div class="publico-barra"><i style="width:0.9%"></i></div></li>
+        </ul>
+      </article>
+
+      <article class="publico-card">
+        <h3>Principais países</h3>
+        <ul class="publico-lista">
+          <li class="publico-item"><strong>Brasil</strong><span>95,5%</span><div class="publico-barra"><i style="width:95.5%"></i></div></li>
+          <li class="publico-item"><strong>Índia</strong><span>0,9%</span><div class="publico-barra"><i style="width:0.9%"></i></div></li>
+          <li class="publico-item"><strong>Estados Unidos</strong><span>0,7%</span><div class="publico-barra"><i style="width:0.7%"></i></div></li>
+          <li class="publico-item"><strong>Argentina</strong><span>0,5%</span><div class="publico-barra"><i style="width:0.5%"></i></div></li>
+          <li class="publico-item"><strong>Alemanha</strong><span>0,4%</span><div class="publico-barra"><i style="width:0.4%"></i></div></li>
+        </ul>
+      </article>
+
+      <article class="publico-card">
+        <h3>Principais cidades</h3>
+        <ul class="publico-lista">
+          <li class="publico-item"><strong>Imbituba</strong><span>40,9%</span><div class="publico-barra"><i style="width:40.9%"></i></div></li>
+          <li class="publico-item"><strong>Tubarão</strong><span>11,8%</span><div class="publico-barra"><i style="width:11.8%"></i></div></li>
+          <li class="publico-item"><strong>Araçatuba</strong><span>10,4%</span><div class="publico-barra"><i style="width:10.4%"></i></div></li>
+          <li class="publico-item"><strong>Garopaba</strong><span>5,9%</span><div class="publico-barra"><i style="width:5.9%"></i></div></li>
+          <li class="publico-item"><strong>Capivari de Baixo</strong><span>3,4%</span><div class="publico-barra"><i style="width:3.4%"></i></div></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
 <section id="portfolio">
   <div class="section-title">
     <span>Nosso trabalho</span>
